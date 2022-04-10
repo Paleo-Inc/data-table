@@ -1,10 +1,7 @@
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { Info } from "react-feather";
 
 export default function HoverTooltip({ children, text }) {
-  const SelectStyle = "text-primary ms-1";
 
   return (
     <OverlayTrigger
@@ -14,7 +11,7 @@ export default function HoverTooltip({ children, text }) {
     >
       <span role="button" style={{ height: "14px", lineHeight: "18px" }}>
         {children}
-        <FontAwesomeIcon className={SelectStyle} icon={faInfoCircle} size="sm" />
+        <Info size="22px" className="p-1" />
       </span>
     </OverlayTrigger>
   );

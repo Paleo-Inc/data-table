@@ -2,10 +2,10 @@
 import Table from "./Table";
 import { TableContextProvider } from "../context";
 
-const PaleoTable = () => {
+const PaleoTable = ({ options }) => {
   return (
     <TableContextProvider>
-      <Table />
+      <Table options={options} />
     </TableContextProvider>
   );
 };
